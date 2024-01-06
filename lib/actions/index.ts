@@ -2,9 +2,9 @@
 
 import { revalidatePath } from "next/cache";
 import Product from "../models/product.model";
-import { connectToDB } from "../mongoose";
+import { connectToDB } from "../scraper/mongoose";
 import { scrapeAmazonProduct } from "../scraper";
-import { getAveragePrice, getHighestPrice, getLowestPrice } from "../utils";
+import { getAveragePrice, getHighestPrice, getLowestPrice } from "../scraper/utils";
 import { User } from "@/types";
 import { generateEmailBody, sendEmail } from "../nodemailer";
 
